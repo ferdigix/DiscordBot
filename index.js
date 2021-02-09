@@ -151,7 +151,7 @@ bot.on ('message', async message => {
         }
     }
     else if(command === 'leave'){
-        if(message.guild.connection) message.guild.voiceConnection.disconnect();
+        if(message.guild.connection) voiceChannel.leave();
     }
     else if(command === 'emotes'){
         var images = [];
