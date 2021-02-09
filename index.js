@@ -150,6 +150,9 @@ bot.on ('message', async message => {
             message.reply("You didn't provide any URLs");
         }
     }
+    else if(command === 'leave'){
+        if(message.guild.connection) message.guild.voiceConnection.disconnect();
+    }
     else if(command === 'emotes'){
         var images = [];
         index = 0;
