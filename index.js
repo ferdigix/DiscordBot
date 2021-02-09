@@ -108,7 +108,7 @@ bot.on ('message', async message => {
             return message.channel.send("You need to be in a voice channel!");
         }
         voiceChannel.join().then((connection) =>{
-            connection.play(path.join(__dirname,'rage.mp4'));
+            connection.play(path.join(__dirname,'rage4.mp4'));
         });
     }else if(command === 'rage3'){
         const path = require('path');
